@@ -27,6 +27,8 @@ The `population_projection` module contains submodules for each projection: `wpp
 ```python
 from projections import wpp, ihme, wcde
 from wget import download
+import pandas as pd
+import plotly.express as px
 
 # Download all data files from the respective sources
 wpp_file = download(wpp.REMOTE_URL)
